@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.js"></script>
+
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/vidBg.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/sass/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <style>
+
+
+    .bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background: url('frontendimg/concert.jpg') no-repeat;
+        background-size: cover;
+    }
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, .9);
+    }
+    </style>
+
+</head>
+
+
+
+
+
+
+
+
+<!-- apply our angular app to our site -->
+<body ng-app="routerApp" class = "black">
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <iframe frameborder="0" height="100%" width="100%"
+        src="https://youtube.com/embed/BickMFHAZR0?autoplay=1&controls=0&showinfo=0&autohide=1">
+    </iframe>
+</div>
+
+
+
+<!-- NAVIGATION -->
+<nav role="navigation ">
+            <div class="nav-wrapper container "><a id="logo-container" href="#" class="brand-logo thin white-text">Wave</a>
+
+            <!-- HOME -->
+                <!-- Desktop version -->
+                <ul class="right hide-on-med-and-down">
+                    <li class="thin"><a ui-sref="home">Home</a>
+                    </li>
+                </ul>
+                <!-- Mobile Version -->
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a ui-sref="home">Home</a>
+                    </li>
+                </ul>
+
+            <!-- ABOUT -->
+                <!-- Desktop version -->
+                <ul class="right hide-on-med-and-down">
+                    <li class="thin"><a ui-sref="about">About</a>
+                    </li>
+                </ul>
+                <!-- Mobile Version -->
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a ui-sref="about">About</a>
+                    </li>
+                </ul>
+
+
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+</nav>
+
+
+
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div ui-view></div>
+
+<!--
+<footer class="page-footer  ">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="white-text ">Blah blah blah.</p>
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 2</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 3</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 2</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 3</a>
+                    </li>
+                    <li><a class="white-text" href="#!">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <a class="white-text "> Made by  </a> <a class="white-text " href="http://waveat.me">Wave</a>
+        </div>
+    </div>
+</footer>
+-->
+
+
+<script>
+    particlesJS('particles-js', {
+    particles: {
+        color: '#ff0',
+        shape: 'circle',
+        opacity: 1,
+        size: 3,
+        size_random: true,
+        nb: 25,
+        line_linked: {
+            enable_auto: true,
+            distance: 200,
+            color: '#ff0000',
+            width: 2,
+            condensed_mode: {
+                enable: true,
+                rotateX: 0,
+                rotateY: 0
+            }
+        },
+        anim: {
+            enable: true,
+            speed: 2
+        }
+    },
+    interactivity: {
+        enable: true,
+        mouse: {
+            distance: 200
+        },
+        mode: 'grab'
+    },
+    retina_detect: true
+});
+    </script>
+
+
+</body>
+
+
+
+</html>
