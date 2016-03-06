@@ -16,8 +16,6 @@
     <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
     <style>
-
-
     .bg-video {
         position: fixed;
         right: 0;
@@ -51,12 +49,11 @@
 <body ng-app="routerApp" class = "black">
 <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
     <iframe frameborder="0" height="100%" width="100%"
-        src="https://youtube.com/embed/q7v4DanYYTg?autoplay=1&controls=0&showinfo=0&autohide=1&enablejsapi=1>
+        src="https://youtube.com/embed/HLXxlYFTCXE?autoplay=1&controls=0&showinfo=0&autohide=1&enablejsapi=1">
     </iframe>
 </div>
 <script>
     var player;
-
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytplayer', {
         events: {
@@ -64,7 +61,6 @@ function onYouTubeIframeAPIReady() {
         }
     });
 }
-
 function onPlayerReady(event) {
     player.mute();
     player.playVideo();
@@ -118,7 +114,6 @@ function onPlayerReady(event) {
             <div class="col l6 s12">
                 <h5 class="white-text">Company Bio</h5>
                 <p class="white-text ">Blah blah blah.</p>
-
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Settings</h5>
@@ -157,41 +152,6 @@ function onPlayerReady(event) {
 -->
 
 
-<script>
-    particlesJS('particles-js', {
-    particles: {
-        color: '#ff0',
-        shape: 'circle',
-        opacity: 1,
-        size: 3,
-        size_random: true,
-        nb: 25,
-        line_linked: {
-            enable_auto: true,
-            distance: 200,
-            color: '#ff0000',
-            width: 2,
-            condensed_mode: {
-                enable: true,
-                rotateX: 0,
-                rotateY: 0
-            }
-        },
-        anim: {
-            enable: true,
-            speed: 2
-        }
-    },
-    interactivity: {
-        enable: true,
-        mouse: {
-            distance: 200
-        },
-        mode: 'grab'
-    },
-    retina_detect: true
-});
-    </script>
 
 
 </body>
