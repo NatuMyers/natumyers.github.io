@@ -14,16 +14,34 @@
 }
 
 
- @font-face { font-family: Stellar; font-weight: light; src: url('font/Stellar-light.otf');}
-@font-face { font-family: Stellar; font-weight: medium; src: url('font/Stellar-Medium.otf');}
+@font-face { font-family: ButlerThick; src: url('../font/Hypatia-Sans-Pro.ttf');}
 
- h6 { font-family: Stellar, sans-serif;
-      font-size: 700%;
-      text-shadow: 6px 6px 8px #000000;
+@font-face { font-family: ButlerThin; src: url('../font/Hypatia-Sans-Pro-Light.ttf');}
+
+ h6 {
+        font-family: ButlerThin;
+        font-size: 150%;
+        line-height: 130%;
      }
 
- h7 { font-family: Stellar, sans-serif;
-      font-size: 130%;
+
+ h7 {
+        font-family: ButlerThick
+        font-size: 700%;
+        text-shadow: 2px 2px 8px #000000;
+     }
+
+ h8 {
+        font-family: ButlerThin;
+        font-size: 430%;
+        text-shadow: 2px 2px 8px #000000;
+     }
+
+
+ h9 {
+        font-family: ButlerThin;
+        font-size: 150%;
+        text-shadow: 2px 2px 8px #000000;
      }
 
 

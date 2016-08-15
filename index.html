@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <!-- JS (load angular, ui-router, and our custom js file) -->
     <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     <script src="/js/app.js"></script>
     <link rel="stylesheet" type="text/css" href="css/vidBg.css">
@@ -16,7 +18,7 @@
     <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
     <style>
-    .bg-video {
+    .bg-1 {
         position: fixed;
         right: 0;
         bottom: 0;
@@ -25,7 +27,7 @@
         width: auto;
         height: auto;
         z-index: -100;
-        background: url('frontendimg/concert.jpg') no-repeat;
+        background: url('img/back1.jpg') no-repeat;
         background-size: cover;
     }
     .content {
@@ -36,50 +38,58 @@
     }
     </style>
 
+<title>Robin Sharma</title>
 </head>
 
 
 
 
-
-
-
-
 <!-- apply our angular app to our site -->
-<body ng-app="routerApp" class = "black" style="background-image: url('frontendimg/concert.jpg');">
+<body ng-app="routerApp" >
+
+
+
+
+
 
 
 <!-- NAVIGATION -->
-<nav role="navigation " class = "black">
-            <div class="nav-wrapper container "><a id="logo-container" href="#" class="brand-logo thin white-text">Wave</a>
+<nav role="navigation  " class = "white z-depth-5"  >
+            <div class="nav-wrapper container "><a id="logo-container" href="#" class="brand-logo black-text thin  "><h6>Robin Sharma</h6></a>
 
-            <!-- HOME -->
+            <!-- Shop -->
                 <!-- Desktop version -->
-                <ul class="right hide-on-med-and-down">
-                    <li class="thin"><a ui-sref="home">Home</a>
+                <ul class="right ">
+                      <li ><a class="waves-effect blue-grey darken-3 waves-light btn ">Shop</a>
                     </li>
                 </ul>
-                <!-- Mobile Version -->
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a ui-sref="home">Home</a>
-                    </li>
-                </ul>
+
+              <!-- Shop -->
+                  <!-- Desktop version -->
+                  <ul class="right ">
+                        <li ><a class="waves-effect black white-text waves-light btn ">Login</a>
+                      </li>
+                  </ul>
 
             <!-- ABOUT -->
                 <!-- Desktop version -->
-                <ul class="right hide-on-med-and-down">
-                    <li class="thin"><a ui-sref="about">About</a>
-                    </li>
-                </ul>
-                <!-- Mobile Version -->
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a ui-sref="about">About</a>
+                <ul class="right ">
+                    <li ><a ui-sref="about" class="black-text">About</a>
                     </li>
                 </ul>
 
 
+                <!-- Blog -->
+                    <!-- Desktop version -->
+                    <ul class="right ">
+                        <li ><a ui-sref="about" class="black-text">Blog</a>
+                        </li>
+                    </ul>
 
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+
+
             </div>
 </nav>
 
@@ -87,38 +97,61 @@
 
 <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
 <div ui-view></div>
-
-<!--
-<footer class="page-footer  ">
+<footer class="page-footer  black "  style="background-image: url('/img/back2.jpg');">
     <div class="container">
         <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Company Bio</h5>
-                <p class="white-text ">Blah blah blah.</p>
-            </div>
             <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
+                <h6 class="white-text">Robin Sharma</h6>
+                <p class="grey-text lighten-5 thin">Robin is the founder of Sharma Leadership International Inc. (SLI), a global consultancy with a single focus: to help organizations develop employees that Lead Without a Title.</p>
+
+            </div>
+
+            <div class="col l3 s12">
+              <p></p>
+            </div>
+
+            <div class="col l2 s12">
+                <h6 class="white-text">Resources</h6>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a>
+                                    <li><a class="grey-text lighten-4 light" href="#!">Books</a>
+                                    </li>
+                                    <li><a class="grey-text lighten-4 light" href="#!">Audio</a>
+                                    </li>
+                                    <li><a class="grey-text lighten-4 light" href="#!">Video</a>
+                                    </li>
+                                    <li><a class="grey-text lighten-4 light" href="#!">Archives</a>
+                                    </li>
+                </ul>
+            </div>
+
+            <div class="col l2 s12">
+                <h6 class="white-text">Store</h6>
+                <ul>
+
+                    <li><a class="grey-text lighten-4 light" href="#!">Books</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 2</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Audio</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 3</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Video</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 4</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Archives</a>
                     </li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Connect</h5>
+            <div class="col l2 s12">
+                <h6 class="white-text">Connect</h6>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Facebook</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 2</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Twitter</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 3</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Youtube</a>
                     </li>
-                    <li><a class="white-text" href="#!">Link 4</a>
+                    <li><a class="grey-text lighten-4 light" href="#!">Linkedin</a>
+                    </li>
+                    <li><a class="grey-text lighten-4 light" href="#!">Medium</a>
+                    </li>
+                    <li><a class="grey-text lighten-4 light" href="#!">RSS</a>
                     </li>
                 </ul>
             </div>
@@ -126,13 +159,10 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <a class="white-text "> Made by  </a> <a class="white-text " href="http://waveat.me">Wave</a>
+            <a class="grey-text lighten-3 light"> © 2016 The Titan Academy Global AG. </a>
         </div>
     </div>
 </footer>
--->
-
-
 
 
 </body>

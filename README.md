@@ -1,11 +1,11 @@
 SETTING UP/ COMPILING SASS FILES
 ===================
-
-##### Run an "npm install" to get the latest dependencies!!!
-
+ 
+##### Run an "npm install" to get the latest dependencies! ! 
+ 
 
 ##### TO COMPILE A SASS FILE AND QUICKLY CHANGE COLOR SCHEME, 
-
+ 
 ```javascript 
 gem install sass; sudo gem install sass; sass --watch materialize.scss:materialize.css 
 ```
@@ -18,7 +18,7 @@ angular-materialize
 
 **angular-materialize** in action http://krescruz.github.io/angular-materialize/
 
-This library is a set of AngularJS directives which make it possible to use features from [Materialize](http://materializecss.com/) with AngularJS
+This library is a set of AngularJS directives which make it possible to use features from [Materialize](http://materializecss.com/) with AngularJS.
 
 Just add the module ui.materialize to your dependencies like:
 
